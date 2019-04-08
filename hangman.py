@@ -5,7 +5,7 @@ wordneeded = True
 choice = None
 
 def getwords():
-    words = r.get('https://raw.githubusercontent.com/first20hours/google-10000-english/master/20k.txt')
+    words = r.get('https://raw.githubusercontent.com/first20hours/google-10000-english/master/20k.txt') #TODO Change URL to simpler words
     wordlist = words.text
     return random.choice(wordlist.split('\n'))
 
