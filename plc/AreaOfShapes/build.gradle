@@ -1,0 +1,12 @@
+apply plugin: 'java'
+
+jar {
+    archiveBaseName = 'area-of-shapes'
+    archiveVersion =  '0.1.0'
+
+    manifest {
+        attributes(
+            'Main-Class': 'dev.gaminggeek.areaofshapes.AreaOfShapes'
+        )
+  }
+}
