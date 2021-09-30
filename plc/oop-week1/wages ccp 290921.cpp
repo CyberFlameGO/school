@@ -12,7 +12,7 @@ int main()
 {
 
     cout << "Wages Calculation" << endl;
-    cout << "Key in hours worked "  << endl;
+    cout << "Key in hours worked " << endl;
 
     cin >> hours;
 
@@ -20,9 +20,7 @@ int main()
     /// RESULT_VARIABLE = VARIABLE1  * VARIABLE2;
     gross = hours * rate;
 
-    cout << "Gross pay = "  << gross;
-
-
+    cout << "Gross pay = " << gross;
 
     return 0;
 }
