@@ -4,6 +4,7 @@ using namespace std;
 /// DECLARE VARIABLES
 /// TYPE OF VARIABLE   VARIABLE_NAME;
 int rate = 15;
+float net_pay;
 float hours;
 float gross;
 float tax;
@@ -16,11 +17,23 @@ int main()
 
     cin >> hours;
 
-    /// FORMAT FOR CALCULATIONS
-    /// RESULT_VARIABLE = VARIABLE1  * VARIABLE2;
+    // FORMAT FOR CALCULATIONS
+    // RESULT_VARIABLE = VARIABLE1  * VARIABLE2;
     gross = hours * rate;
+    cout << "Gross pay = " << gross << endl;
 
-    cout << "Gross pay = " << gross;
+    if (gross <= 650)
+    {
+        tax = gross * .2;
+    }
+    else if (gross > 650)
+    {
+        // add smth here eventually
+    }
+    cout << "Tax = " << tax << endl;
+
+    net_pay = gross - tax;
+    cout << "Net pay = " << net_pay << endl;
 
     return 0;
 }
