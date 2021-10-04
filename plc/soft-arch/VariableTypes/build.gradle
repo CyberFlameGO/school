@@ -1,0 +1,12 @@
+plugins {
+    id 'java'
+}
+
+group 'dev.gaminggeek.variabletypes'
+version '0.1.0'
+
+jar {
+    manifest(({
+        attributes 'Main-Class': 'dev.gaminggeek.variabletypes.VariableTypes'
+    } as groovy.lang.Closure<?>))
+}
