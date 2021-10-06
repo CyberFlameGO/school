@@ -1,4 +1,4 @@
-package dev.gaminggeek.variabletypes;
+package dev.gaminggeek.week2;
 
 class VariableTypes {
     public static void main(String[] args) {
