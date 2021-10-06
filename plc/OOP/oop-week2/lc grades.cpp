@@ -2,12 +2,12 @@
 
 using namespace std;
 
-float mark;
 bool higher = false;
+string input;
+float mark;
 
 int main()
 {
-    string input;
     cout << "Use Higher Level Grades? Enter 'yes' or 'no':" << endl;
     cin >> input;
     if (input == "yes")
@@ -18,6 +18,13 @@ int main()
 
     cout << "Enter a Leaving Certificate subject grade" << endl;
     cin >> mark;
+
+    // 0 is technically valid but it's also what we get if invalid input is given
+    if (mark == 0 || mark > 100) 
+    {
+        cout << "Grade is not valid!" << endl;
+        return 0;
+    }
 
     if (mark >= 90)
     {
