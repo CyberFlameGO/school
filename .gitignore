@@ -6,3 +6,4 @@ plc/soft-arch/AreaOfShapes/.gradle/
 plc/soft-arch/VariableTypes/build/
 plc/soft-arch/VariableTypes/.idea/
 plc/soft-arch/VariableTypes/.gradle/
+.vscode/settings.json
