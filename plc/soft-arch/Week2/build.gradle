@@ -7,6 +7,6 @@ version '0.1.0'
 
 jar {
     manifest(({
-        attributes 'Main-Class': 'dev.gaminggeek.week2.VariableTypes' // todo: change main class to one that allows switching between projects
+        attributes 'Main-Class': 'dev.gaminggeek.week2.Week2'
     } as groovy.lang.Closure<?>))
 }
