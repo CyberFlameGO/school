@@ -1,7 +1,7 @@
 package dev.gaminggeek.week2;
 
 class VariableTypes {
-    public static void main(String[] args) {
+    public static void main() {
         int cars, drivers, passengers, carsNotDriven, carsDriven;
         double spaceInCar, carpoolCapacity, avgPassengersPerCar;
 
