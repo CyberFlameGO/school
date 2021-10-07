@@ -7,9 +7,16 @@ import java.util.Scanner;
 
 import dev.gaminggeek.week2.VariableTypes;
 import dev.gaminggeek.week2.DonateBlood;
+import dev.gaminggeek.week2.EligibleToVote;
+import dev.gaminggeek.week2.IfElse;
 
 class Week2 {
-    public static final Set<String> projects = Set.of("variabletypes", "donateblood");
+    public static final Set<String> projects = Set.of(
+        "variabletypes",
+        "donateblood",
+        "eligibletovote",
+        "ifelse"
+    );
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -22,17 +29,28 @@ class Week2 {
             return;
         }
 
-        String[] empty = new String[0];
-
-        switch (selected) {
-            case "variabletypes": {
-                VariableTypes.main(empty);
-                break;
+        try {
+            switch (selected) {
+                case "variabletypes": {
+                    VariableTypes.main();
+                    break;
+                }
+                case "donateblood": {
+                    DonateBlood.main(scanner);
+                    break;
+                }
+                case "eligibletovote": {
+                    EligibleToVote.main(scanner);
+                    break;
+                }
+                case "ifelse": {
+                    IfElse.main(scanner);
+                    break;
+                }
             }
-            case "donateblood": {
-                DonateBlood.main(empty);
-                break;
-            }
+        } catch (Exception e) {
+            System.out.println("An error occured while running project " + selected + "!\nIf you care, the stacktrace is below...");
+            e.printStackTrace();
         }
 
         return;
