@@ -16,5 +16,17 @@ public class IfElse {
       System.out.println("That number is two digits long");
     else if (num < 1000)
       System.out.println("That number is three digits long");
+    else if (num < 10000)
+      System.out.println("That number is four digits long");
+    else if (num < 100000)
+      System.out.println("That number is five digits long");
+    else if (num < 1000000)
+      System.out.println("That number is six digits long");
+    else if (num < 10000000)
+      System.out.println("That number is seven digits long");
+    else if (num < 100000000)
+      System.out.println("That number is eight digits long");
+    else if (num < 1000000000)
+      System.out.println("That number is nine digits long");
   }
 }
