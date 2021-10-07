@@ -34,7 +34,7 @@ public class AreaOfShapes {
     }
     
     private static void areaOfCircle(Scanner scanner) {
-        double radius, area, length;
+        double radius;
         double pi = 3.14;
       
         System.out.println("Enter the radius below:\n");
